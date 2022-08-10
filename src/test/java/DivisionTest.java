@@ -2,9 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class DivisionTest {
-    private final Program program = new Program();
-
+public class DivisionTest extends ProgramTest {
     @Test
     public void testDivideIntegerSuccess() {
         Assert.assertEquals(program.divide(42, 2), 21.0);
