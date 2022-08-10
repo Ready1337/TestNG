@@ -14,7 +14,7 @@ public class Program {
             throw new IllegalStateException("Name must not be empty");
         }
 
-        if (ages <= 0) {
+        if (ages < 0) {
             throw new IllegalStateException("Ages must not be negative value");
         }
 
