@@ -10,6 +10,10 @@ public class Program {
 
     public String sayMyName(String name, int ages) {
 
+        if (name == null) {
+            throw new IllegalStateException("Name must not be null");
+        }
+
         if (name.isEmpty()) {
             throw new IllegalStateException("Name must not be empty");
         }
